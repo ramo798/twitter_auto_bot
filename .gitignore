@@ -1,3 +1,5 @@
 */
+*.zip
 *.py
 !main.py
+!lambda_function.py

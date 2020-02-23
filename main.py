@@ -17,7 +17,7 @@ random_no = random.randint(1,200)
 api.update_status("フォロー絶対返します"+ str(random_no) +" #相互フォロー")
 
 #検索して上からフォロー
-search_results = tweepy.Cursor(api.search, q='#相互フォロー').items(50)
+search_results = tweepy.Cursor(api.search, q='#相互フォロー').items(20)
 for result in search_results:
     user_id = result.user.id
     print (user_id)
